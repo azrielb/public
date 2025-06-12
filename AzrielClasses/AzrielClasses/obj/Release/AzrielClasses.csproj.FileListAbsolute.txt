@@ -1,0 +1,10 @@
+C:\Users\chany\Dropbox\משותפת חני ועזריאל\AzrielClasses\AzrielClasses\bin\Release\AzrielClasses.dll
+C:\Users\chany\Dropbox\משותפת חני ועזריאל\AzrielClasses\AzrielClasses\bin\Release\AzrielClasses.pdb
+C:\Users\chany\Dropbox\משותפת חני ועזריאל\AzrielClasses\AzrielClasses\obj\Release\ResolveAssemblyReference.cache
+C:\Users\chany\Dropbox\משותפת חני ועזריאל\AzrielClasses\AzrielClasses\obj\Release\AzrielClasses.dll
+C:\Users\chany\Dropbox\משותפת חני ועזריאל\AzrielClasses\AzrielClasses\obj\Release\AzrielClasses.pdb
+C:\Users\azrielb\Dropbox\משותפת חני ועזריאל\AzrielClasses\AzrielClasses\bin\Release\AzrielClasses.dll
+C:\Users\azrielb\Dropbox\משותפת חני ועזריאל\AzrielClasses\AzrielClasses\bin\Release\AzrielClasses.pdb
+C:\Users\azrielb\Dropbox\משותפת חני ועזריאל\AzrielClasses\AzrielClasses\obj\Release\ResolveAssemblyReference.cache
+C:\Users\azrielb\Dropbox\משותפת חני ועזריאל\AzrielClasses\AzrielClasses\obj\Release\AzrielClasses.dll
+C:\Users\azrielb\Dropbox\משותפת חני ועזריאל\AzrielClasses\AzrielClasses\obj\Release\AzrielClasses.pdb
