@@ -9,9 +9,15 @@ def run_os_command(cmd):
     return exit_code
 
 
-os.chdir(os.path.dirname(__file__))
+try:
+    repo = git.repo.Repo('.', search_parent_directories=True)
+except Exception as e:
+    print(type(e),e)
+    repo = git.repo.Repo(fr"{os.path.dirname(__file__)}\..\..\.git")
+    
+os.chdir(repo.git.rev_parse("--show-toplevel"))
+print()
 run_os_command("git pull")
-repo = git.repo.Repo(fr"{os.path.dirname(__file__)}\..\.git")
 for branch in repo.branches:
     if branch != repo.active_branch:
         exit_code = run_os_command(f"git fetch origin {branch.name}:{branch.name}") #we use the command line interface for printing the information
