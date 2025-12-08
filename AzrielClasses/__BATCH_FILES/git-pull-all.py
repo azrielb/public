@@ -11,6 +11,9 @@ except Exception as e:
     repo = git.repo.Repo(os.path.dirname(__file__), search_parent_directories=True)
     
 os.chdir(repo.git.rev_parse("--show-toplevel"))
+print("git dir:", repo.git_dir)
+print("remote url:", repo.remote().url)
+print()
 if run_os_command("git pull") != 0:
     if ask_yn("Do you want to push your branch?"):
         run_os_command(f"git push --set-upstream origin {repo.active_branch.name}")
