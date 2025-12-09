@@ -6,8 +6,12 @@ import sys
 if os.name == 'nt':
     os.system('') # thanks to ChatGPT that has given me this tip for using the coloring in `run_os_command`
 
-def run_os_command(cmd, abort_for_any_error=False):
+
+def print_command(cmd):
     print(f'\033[93m{cmd}\033[0m')
+
+def run_os_command(cmd, abort_for_any_error=False):
+    print_command(cmd)
     exit_code = os.system(cmd)
     print()
     if abort_for_any_error and exit_code != 0:
@@ -15,9 +19,15 @@ def run_os_command(cmd, abort_for_any_error=False):
         sys.exit(exit_code)
     return exit_code
 
-def get_output_of_os_command(cmd):
+def get_output_of_os_command(cmd, print_cmd=False):
+    if print_cmd:
+        print_command(cmd)
     try:
-        return subprocess.check_output(cmd.split(), shell=True, text=True).strip()
+        output = subprocess.check_output(cmd.split(), shell=True, text=True).strip()
+        if print_cmd:
+            print(output)
+            print()
+        return output
     except subprocess.CalledProcessError as e:
         print(f"Error running command `{cmd}`:", e)
         raise(e)

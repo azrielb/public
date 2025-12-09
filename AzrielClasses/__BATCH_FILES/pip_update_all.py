@@ -3,8 +3,7 @@ import subprocess
 from azriel import run_os_command, get_output_of_os_command
 
 
-output = get_output_of_os_command('python -m pip --disable-pip-version-check list --outdated')
-print(output)
+output = get_output_of_os_command('python -m pip --disable-pip-version-check list --outdated', True)
 '''An example for the output:
 Package    Version Latest       Type
 ---------- ------- ------------ -----
