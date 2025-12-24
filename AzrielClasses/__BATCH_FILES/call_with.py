@@ -19,7 +19,7 @@ def main(argv):
     if len(argv) < 2:
         print(f"Usage: python {argv[0]} \"command with `cmd`\"")
         return 1
-    print(parse_backticks(" ".join(sys.argv[1:])))
+    print(parse_backticks(" ".join(argv[1:])))
 
 if __name__ == "__main__":
     sys.exit(main(sys.argv))
