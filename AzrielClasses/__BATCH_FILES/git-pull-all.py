@@ -25,7 +25,7 @@ for branch in repo.branches:
                 run_os_command("git branch -D " + branch.name)
 run_os_command("git status")
 if len(sys.argv) > 1:
-    run_os_command("git merge " + sys.argv[1])
+    run_os_command("git merge --no-edit " + sys.argv[1])
 if 'use "git push"' in repo.git.status():
     if ask_yn("Do you want to push your changes?"):
         run_os_command("git push")
