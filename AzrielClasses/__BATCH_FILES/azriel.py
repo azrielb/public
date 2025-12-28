@@ -23,7 +23,9 @@ def get_output_of_os_command(cmd, print_cmd=False):
     if print_cmd:
         print_command(cmd)
     try:
-        output = subprocess.check_output(cmd.split(), shell=True, text=True).strip()
+        if os.name == 'nt':
+            cmd = f'chcp 65001 >nul && {cmd}'
+        output = subprocess.check_output(cmd, shell=True, text=True, encoding='utf-8').strip()
         if print_cmd:
             print(output)
             print()
