@@ -31,7 +31,7 @@ namespace InvestmentCalculator
 
         private void SetupUI()
         {
-            this.Text = "מחשבון ריבית דריבית - השקעות לעצלנים";
+            this.Text = "מחשבון ריבית דריבית";
             this.Size = new Size(650, 900);
             this.StartPosition = FormStartPosition.CenterScreen;
             this.RightToLeft = RightToLeft.Yes;
@@ -46,7 +46,7 @@ namespace InvestmentCalculator
             // Title
             titleLabel = new Label
             {
-                Text = "מחשבון ריבית דריבית - השקעות לעצלנים",
+                Text = "מחשבון ריבית דריבית",
                 Font = new Font("Arial", 18, FontStyle.Bold),
                 ForeColor = Color.Gold,
                 AutoSize = false,

@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("InvestmentCalculator")]
-[assembly: AssemblyDescription("מחשבון ריבית דריבית - השקעות לעצלנים")]
+[assembly: AssemblyDescription("מחשבון ריבית דריבית")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("InvestmentCalculator")]
