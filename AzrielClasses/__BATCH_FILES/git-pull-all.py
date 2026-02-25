@@ -18,7 +18,7 @@ if run_os_command("git pull") != 0:
     if ask_yn("Do you want to push your branch?"):
         run_os_command(f"git push --set-upstream origin {repo.active_branch.name}")
 for branch in repo.branches:
-    if branch != repo.active_branch:
+    if branch != repo.active_branch and not branch.name.startswith("claude/"):
         exit_code = run_os_command(f"git fetch origin {branch.name}:{branch.name}") #we use the command line interface for printing the information
         if exit_code != 0:
             if ask_yn("Do you want to delete this local branch?", False):

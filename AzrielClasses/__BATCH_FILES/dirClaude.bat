@@ -1,1 +1,1 @@
-@dir /s/b "%userprofile%\Downloads\images for Claude\"
+@dir /s /b /o:d "C:\ClaudeFiles"
