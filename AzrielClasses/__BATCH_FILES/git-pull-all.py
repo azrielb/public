@@ -14,6 +14,7 @@ os.chdir(repo.git.rev_parse("--show-toplevel"))
 print("git dir:", repo.git_dir)
 print("remote url:", repo.remote().url)
 print()
+run_os_command(f"git fetch --all --prune --prune-tags")
 if run_os_command("git pull") != 0:
     if ask_yn("Do you want to push your branch?"):
         run_os_command(f"git push --set-upstream origin {repo.active_branch.name}")
